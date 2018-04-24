@@ -17,5 +17,35 @@ get_header(); ?>
         </div>
     <?php endif; ?>
 
+    <section class="our-products container">
+        <div class="title">Категории продуктов</div>
+        <ul class="flex justify-between products-list">
+            <li>
+                <a href="">
+                    <img src="" alt="">
+                    <span class="text">Масла для легковых и лёгких коммерческих авто</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="" alt="">
+                    <span class="text">Масла для грузовых автомобилей</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="" alt="">
+                    <span class="text">Масла для сельскохозяйственной и садовой техники</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="" alt="">
+                    <span class="text">Индустриальные и прочие смазочные материалы</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+<!--    <iframe src="http://www.opetoil.com.tr/fullmatch/Default.aspx?Lang=eng&isKioskMode=0" frameborder="0" width="100%"></iframe>-->
 
 <?php get_footer(); ?>

@@ -1,0 +1,58 @@
+.duration, .header__contacts-list .item a {
+  -webkit-transition: all .2s linear 0s;
+  transition: all .2s linear 0s;
+}
+
+body {
+  color: #2c2f33;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.header-top {
+  padding: 25px 0;
+}
+
+.header__contacts-list .fas, .header__contacts-list .far {
+  color: #FF8800;
+  width: 20px;
+}
+.header__contacts-list .item:first-of-type {
+  margin-bottom: 5px;
+}
+.header__contacts-list .item a {
+  color: #2c2f33;
+  margin: 0 auto;
+}
+.header__contacts-list .item a:hover {
+  color: #FF8800;
+}
+
+.header-nav {
+  height: 60px;
+  background: #1FA9E6;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart {
+  font-size: 30px;
+  color: #2c2f33;
+}
+
+/*# sourceMappingURL=style.css.map */

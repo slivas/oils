@@ -7,6 +7,7 @@
         <title><?php wp_title('«', true, 'right'); ?></title>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
         <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" type="image/x-icon">
+
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
@@ -15,11 +16,13 @@
             <header>
                 <div class="header-top">
                     <div class="container flex justify-between align-center">
-                        <a href="/" class="item logo" title="ПРЕМИУМ ОИЛ ЛТД">ПРЕМИУМ ОИЛ ЛТД</a>
-                        <div class="item flex">
-                            <ul class="flex">
-                                <li><a href="tel:+380734306034"><i class="fas fa-mobile-alt"></i> +38(073)430-60-34</a></li>
-                                <li><a href="mailto:ltd.premiumoil@gmail.com"></a><i class="far fa-envelope"></i> ltd.premiumoil@gmail.com</li>
+                        <a href="/" class="item logo flex align-center" title="ПРЕМИУМ ОИЛ ЛТД">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">ПРЕМИУМ ОИЛ ЛТД
+                        </a>
+                        <div class="item flex align-center">
+                            <ul class="header__contacts-list flex column">
+                                <li class="item"><a href="tel:+380734306034"><i class="fas fa-mobile-alt"></i> +38(073)430-60-34</a></li>
+                                <li class="item"><a href="mailto:ltd.premiumoil@gmail.com"><i class="far fa-envelope"></i> ltd.premiumoil@gmail.com</a></li>
                             </ul>
                             <div class="cart">
                                 <i class="fas fa-shopping-cart"></i>
