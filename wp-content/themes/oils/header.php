@@ -19,25 +19,34 @@
                         <a href="/" class="item logo flex align-center" title="ПРЕМИУМ ОИЛ ЛТД">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">ПРЕМИУМ ОИЛ ЛТД
                         </a>
-                        <div class="item flex align-center">
-                            <ul class="header__contacts-list flex column">
+                        <div class="item item-right flex align-center">
+                            <ul class="header__contacts-list flex desktop">
                                 <li class="item"><a href="tel:+380734306034"><i class="fas fa-mobile-alt"></i> +38(073)430-60-34</a></li>
                                 <li class="item"><a href="mailto:ltd.premiumoil@gmail.com"><i class="far fa-envelope"></i> ltd.premiumoil@gmail.com</a></li>
                             </ul>
-                            <div class="cart">
-                                <i class="fas fa-shopping-cart"></i>
+                            <a href="" class="language btn desktop">UA</a>
+                            <div class="cart-wrapper">
+                                <a class="cart" href="">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <span class="cart__sum">99</span>
+                            </div>
+                            <div class="nav-icon mobile">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <nav class="header-nav">
-                    <ul class="container flex justify-between">
-                        <li><a href="">item</a></li>
-                        <li><a href="">item</a></li>
-                        <li><a href="">item</a></li>
-                        <li><a href="">item</a></li>
-                        <li><a href="">item</a></li>
+                    <?php wp_nav_menu(array('menu' => 'menu', 'menu_class' => 'container header__menu flex justify-between')); ?>
+                    <ul class="header__contacts-list flex column mobile">
+                        <li class="item"><a href="tel:+380734306034"><i class="fas fa-mobile-alt"></i> +38(073)430-60-34</a></li>
+                        <li class="item"><a href="mailto:ltd.premiumoil@gmail.com"><i class="far fa-envelope"></i> ltd.premiumoil@gmail.com</a></li>
                     </ul>
+                    <a href="" class="language btn mobile">UA</a>
                 </nav>
             </header>
 

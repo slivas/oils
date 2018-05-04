@@ -1,7 +1,9 @@
 
 $blue: #1FA9E6;
 $orange: #FF8800;
-$black: #2c2f33;
+$black: #4a504f;
+$grey: #9a9a9a;
+
 .duration {
   transition: all .2s linear 0s;
 }
@@ -9,12 +11,16 @@ body {
   color: $black;
   font: {
     family: "Open Sans", sans-serif;
-  };
+  }
+  min-width: 320px;
 }
 .container {
   padding: 0 20px;
   margin: 0 auto;
   width: 1200px;
+}
+section {
+  margin-bottom: 40px;
 }
 .logo {
   img {
@@ -24,16 +30,18 @@ body {
 }
 .header-top {
   padding: 25px 0;
+  .item-right {
+    padding-right: 20px;
+  }
 }
 .header__contacts-list {
   .fas, .far {
     color: $orange;
     width: 20px;
+    text-align: center;
   }
   .item {
-    &:first-of-type {
-      margin-bottom: 5px;
-    }
+    margin-right: 20px;
     a {
       color: $black;
       @extend .duration;
@@ -52,7 +60,206 @@ body {
   display: flex;
   align-items: center;
 }
-.cart {
-  font-size: 30px;
-  color: $black;
+.language {
+  margin-right: 20px;
+  &.btn {
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 3px;
+    font-weight: 700;
+  }
 }
+.cart-wrapper {
+  position: relative;
+  .cart__sum {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    font-size: 10px;
+    height: 16px;
+    width: 16px;
+    border: 1px solid $orange;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+.cart {
+  font-size: 24px;
+  color: $black;
+  @extend .duration;
+  &:hover, &.active {
+    color: $orange;
+  }
+}
+.title {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font: {
+    size: 28px;
+    weight: 600;
+  }
+  text-transform: uppercase;
+  &.medium {
+    font-size: 18px;
+    text-transform: none;
+  }
+}
+.products-list {
+  .item {
+    width: 24%;
+    a {
+      color: $black;
+      @extend .duration;
+      display: block;
+      text-align: center;
+      &:hover {
+        color: $blue;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+section.header-home-slider {
+  margin-bottom: 60px;
+  .slick-slide img {
+    width: 100%;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(#000, .2);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    @extend .duration;
+    &:hover {
+      color: $blue;
+    }
+    &.fa-angle-left {
+      left: 40px;
+    }
+    &.fa-angle-right {
+      right: 40px;
+    }
+  }
+  .slick-dots {
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    button {
+      @extend .duration;
+      text-indent: -9999px;
+      border: 1px solid $grey;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      display: block;
+      background: #fff;
+      padding: 0;
+    }
+    li {
+      margin: 0 3px;
+      &.slick-active {
+        button {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
+.btn {
+  background: $orange;
+  border: 2px solid $orange;
+  color: #fff;
+  padding: 10px 40px;
+  font: {
+    size: 24px;
+    weight: 500;
+  }
+  .fas {
+    margin-left: 10px;
+  }
+  @extend .duration;
+  &:hover {
+    color: $orange;
+    background: #fff;
+  }
+}
+.selection__btn {
+  &:hover {
+    .fas {
+      animation: rotate linear 3s infinite;
+    }
+  }
+}
+.about {
+  p {
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.underline {
+  padding-bottom: 5px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    height: 4px;
+    width: 50px;
+    background-color: $orange;
+  }
+}
+footer {
+  background: $black;
+  color: #fff;
+  padding: 30px 0;
+  .copyright {
+    font-size: 12px;
+  }
+  .logo {
+    margin-right: 100px;
+    flex-shrink: 0;
+  }
+  .footer-nav {
+    width: 100%;
+  }
+}
+.footer__nav-wrap {
+  margin-bottom: 20px;
+}
+.hidden {
+  overflow: hidden;
+}
+.mobile {
+  display: none;
+}
+
+
+@import "responsive";
