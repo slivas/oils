@@ -17,6 +17,62 @@
       font-size: 14px;
     }
   }
+  .tabs {
+    flex-direction: column;
+  }
+  .tabs {
+    .ui-tabs-panel {
+      .title {
+        font-size: 26px;
+      }
+    }
+    .title {
+      &:not(.medium){
+        font-size: 30px;
+      }
+      &.medium {
+        font-size: 20px;
+      }
+      .fas {
+        transform: rotate(90deg);
+      }
+    }
+    .tabs__aside {
+      width: 100%;
+      margin: 0 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid #f3f3f3;
+      padding: 0 0 10px;
+      .ui-tabs-tab {
+        font-weight: 600;
+        margin: 0 20px 0 0;
+        .fas {
+          transform: rotate(0deg);
+        }
+        &.ui-tabs-active {
+          .fas {
+            color: $orange;
+            transform: rotate(90deg);
+          }
+        }
+        &:hover {
+          .fas {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .title {
+        &.medium {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .ui-tabs-nav {
+    display: flex;
+  }
 }
 @media (max-width: 767px) {
   .mobile {
@@ -104,6 +160,11 @@
   .header-top .item-right {
     padding-right: 0;
   }
+  .menu-container, .menu-menu-container {
+    height: auto;
+    align-items: flex-start;
+    padding: 0;
+  }
   .header-nav {
     position: fixed;
     height: 100vh;
@@ -115,7 +176,7 @@
     z-index: 9;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 20px 20px;
+    padding: 140px 20px 20px;
     font-size: 18px;
     &.open {
       left: 0;
@@ -126,6 +187,7 @@
     color: $black;
     margin-bottom: 20px;
     padding: 0;
+    align-items: flex-start;
   }
   .header__contacts-list {
     margin-bottom: 20px;
@@ -172,12 +234,39 @@
     }
   }
 }
+@media (max-width: 639px) {
+  .logo img {
+    height: 50px;
+  }
+  .tabs {
+    .tabs__aside ul {
+      flex-direction: column;
+      .ui-tabs-tab {
+        margin: 0 0 15px;
+      }
+    }
+    .title {
+      &:not(.medium) {
+        font-size: 24px;
+      }
+      &.medium {
+        font-size: 16px;
+      }
+    }
+  }
+}
 @media (max-width: 479px) {
   .title, .btn {
     font-size: 18px;
   }
   .header-home-slider {
     display: none;
+  }
+  .cart-wrapper {
+    margin-right: 30px;
+  }
+  .logo img {
+    height: 45px;
   }
 }
 @media (max-width: 400px) {
@@ -190,5 +279,8 @@
   }
   .header-nav {
     width: 100%;
+  }
+  .logo img {
+    height: 30px;
   }
 }

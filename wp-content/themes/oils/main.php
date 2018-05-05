@@ -50,7 +50,7 @@ get_header(); ?>
     </section>
     <section class="selection">
         <div class="container flex justify-center">
-            <a href="<?php echo get_template_directory_uri(); ?>" class="btn selection__btn">Подобрать масло<i class="fas fa-cog"></i></a>
+            <a href="<?php echo get_template_directory_uri(); ?>/selection" class="btn selection__btn">Подобрать масло<i class="fas fa-cog"></i></a>
         </div>
     </section>
     <section class="about">

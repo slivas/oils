@@ -17,7 +17,7 @@
                 <div class="header-top">
                     <div class="container flex justify-between align-center">
                         <a href="/" class="item logo flex align-center" title="ПРЕМИУМ ОИЛ ЛТД">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">ПРЕМИУМ ОИЛ ЛТД
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="ПРЕМИУМ ОИЛ ЛТД">
                         </a>
                         <div class="item item-right flex align-center">
                             <ul class="header__contacts-list flex desktop">
@@ -41,7 +41,9 @@
                     </div>
                 </div>
                 <nav class="header-nav">
-                    <?php wp_nav_menu(array('menu' => 'menu', 'menu_class' => 'container header__menu flex justify-between')); ?>
+                    <div class="container menu-container">
+                        <?php wp_nav_menu(array('menu' => 'menu', 'menu_class' => 'header__menu flex justify-between')); ?>
+                    </div>
                     <ul class="header__contacts-list flex column mobile">
                         <li class="item"><a href="tel:+380734306034"><i class="fas fa-mobile-alt"></i> +38(073)430-60-34</a></li>
                         <li class="item"><a href="mailto:ltd.premiumoil@gmail.com"><i class="far fa-envelope"></i> ltd.premiumoil@gmail.com</a></li>

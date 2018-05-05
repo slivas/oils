@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 28.11.2016
- * Time: 19:19
- */
+/*
+Template Name: page
+*/
+get_header(); ?>
+
+<div class="container text">
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php the_content(); ?>
+    <?php endwhile; // end of the loop. ?>
+
+</div>
+
+
+
+<?php get_footer(); ?>

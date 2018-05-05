@@ -23,4 +23,6 @@ $(document).ready(function(){
         $('.header-nav, .nav-icon').toggleClass('open');
     });
 
+    $( ".tabs" ).tabs();
+
 });
