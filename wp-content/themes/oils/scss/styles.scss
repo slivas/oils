@@ -3,6 +3,7 @@ $blue: #1FA9E6;
 $orange: #FF8800;
 $black: #4a504f;
 $grey: #9a9a9a;
+$light-grey: #dadada;
 
 .duration {
   transition: all .2s linear 0s;
@@ -353,6 +354,51 @@ footer {
     text-align: left;
     .fas {
       color: $orange;
+    }
+  }
+}
+.contacts__header {
+  margin-bottom: 30px;
+}
+.contacts {
+  .item {
+    width: 50%;
+  }
+  .contacts__list {
+    line-height: 2;
+  }
+}
+.items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2%;
+  width: 100%;
+  .item {
+    width: 23%;
+    margin: 0 0 2% 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .img {
+      @extend .duration;
+      border: 1px solid $light-grey;
+      box-shadow: 0 0 8px 1px rgba(#000, 0);
+      width: 100%;
+    }
+    .text {
+      @extend .duration;
+      color: grey;
+      padding: 5px 5px 10px;
+      text-align: center;
+    }
+    &:hover {
+      .img {
+        border-color: $blue;
+        box-shadow: 0 0 8px 1px rgba(#000, .2);
+      }
+      .text {
+        color: $blue;
+      }
     }
   }
 }

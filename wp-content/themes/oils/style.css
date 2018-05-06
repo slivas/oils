@@ -1,4 +1,4 @@
-.duration, .header__menu .menu-item:after, .header__contacts-list .item a, .cart, .products-list .item a, section.header-home-slider .slick-arrow, section.header-home-slider .slick-dots button, .btn, .tabs__aside .ui-tabs-tab .fas {
+.duration, .header__menu .menu-item:after, .header__contacts-list .item a, .cart, .products-list .item a, section.header-home-slider .slick-arrow, section.header-home-slider .slick-dots button, .btn, .tabs__aside .ui-tabs-tab .fas, .items-wrapper .item .img, .items-wrapper .item .text {
   -webkit-transition: all .2s linear 0s;
   transition: all .2s linear 0s;
 }
@@ -384,6 +384,60 @@ footer .footer-nav {
   color: #FF8800;
 }
 
+.contacts__header {
+  margin-bottom: 30px;
+}
+
+.contacts .item {
+  width: 50%;
+}
+.contacts .contacts__list {
+  line-height: 2;
+}
+
+.items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -2%;
+  width: 100%;
+}
+.items-wrapper .item {
+  width: 23%;
+  margin: 0 0 2% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.items-wrapper .item .img {
+  border: 1px solid #dadada;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0);
+  width: 100%;
+}
+.items-wrapper .item .text {
+  color: grey;
+  padding: 5px 5px 10px;
+  text-align: center;
+}
+.items-wrapper .item:hover .img {
+  border-color: #1FA9E6;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+}
+.items-wrapper .item:hover .text {
+  color: #1FA9E6;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 100%;
@@ -602,6 +656,9 @@ footer .footer-nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .header__menu .menu-item {
+    margin-bottom: 6px;
   }
 
   .header__contacts-list {
