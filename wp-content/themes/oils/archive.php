@@ -14,7 +14,7 @@
             </ul>
         </aside>
         <div id="tabs-1" class="items-wrapper">
-            <a class="item" href="">
+            <a class="item" href="/subcategory">
                 <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/img/drop.png" alt=""></div>
                 <div class="text flex justify-center align-center">Моторные масла</div>
             </a>

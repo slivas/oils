@@ -332,13 +332,22 @@ footer {
     list-style: none;
   }
   .ui-tabs-tab {
-    margin-bottom: 8px;
+    color: $black;
+    @extend .duration;
+    &:not(:last-of-type){
+      border-bottom: 1px solid $light-grey;
+    }
     .fas {
       color: $blue;
       @extend .duration;
       transform: rotate(90deg);
     }
+    .ui-tabs-anchor {
+      display: block;
+      padding: 15px 0;
+    }
     &.ui-tabs-active {
+      color: $blue;
       .fas {
         transform: rotate(0deg);
       }
@@ -374,7 +383,7 @@ footer {
   margin-left: -2%;
   width: 100%;
   .item {
-    width: 23%;
+    width: 31.3%;
     margin: 0 0 2% 2%;
     display: flex;
     align-items: center;
@@ -384,6 +393,7 @@ footer {
       border: 1px solid $light-grey;
       box-shadow: 0 0 8px 1px rgba(#000, 0);
       width: 100%;
+      text-align: center;
     }
     .text {
       @extend .duration;

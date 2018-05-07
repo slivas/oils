@@ -48,6 +48,11 @@
       .ui-tabs-tab {
         font-weight: 600;
         margin: 0 20px 0 0;
+        text-align: center;
+        width: 22%;
+        &:not(:last-of-type) {
+          border-bottom: none;
+        }
         .fas {
           transform: rotate(0deg);
         }
