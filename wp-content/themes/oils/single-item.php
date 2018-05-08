@@ -6,7 +6,7 @@
 
     <div class="container">
         <div class="flex">
-            <aside class="tabs__aside">
+            <aside class="tabs__aside single__menu">
                 <span class="title medium">Категории <i class="fas fa-angle-right"></i></span>
                 <?php wp_nav_menu(array('Aside menu' => 'menu', 'menu_class' => 'aside__menu flex justify-between')); ?>
             </aside>
@@ -34,7 +34,19 @@
                 </div>
             </div>
         </div>
-
+        <div class="flex justify-center">
+            <span class="title medium">Похожие товары</span>
+        </div>
+        <ul class="products-other-list flex">
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+            <li class="item"><a href="">Oil</a></li>
+        </ul>
 
     </div>
 

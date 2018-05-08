@@ -78,6 +78,16 @@
   .ui-tabs-nav {
     display: flex;
   }
+  footer .logo {
+    margin-right: 40px;
+    img {
+      height: 30px;
+    }
+  }
+  .product-wrapper {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767px) {
   .mobile {
@@ -241,6 +251,12 @@
       }
     }
   }
+  footer .logo img {
+    height: 45px;
+  }
+  .single__menu {
+    display: none;
+  }
 }
 @media (max-width: 639px) {
   .logo img {
@@ -276,6 +292,9 @@
   .logo img {
     height: 45px;
   }
+  .product-wrapper .custom-select {
+    width: 296px;
+  }
 }
 @media (max-width: 400px) {
   .products-list {
@@ -290,5 +309,12 @@
   }
   .logo img {
     height: 30px;
+  }
+  .product-wrapper .custom-select {
+    width: 256px;
+  }
+  .product-wrapper .btn {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

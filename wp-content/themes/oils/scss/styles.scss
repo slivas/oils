@@ -448,6 +448,7 @@ footer {
   .text {
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: center;
   }
 }
 .product-wrapper {
@@ -497,6 +498,14 @@ footer {
       border-bottom: none;
     }
   }
+}
+.products-other-list {
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 140px;
+  overflow: hidden;
+  background: #ececec;
+  padding: 20px;
 }
 
 @import "responsive";
