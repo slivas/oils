@@ -41,6 +41,9 @@ section {
     }
   }
 }
+.text-center {
+  text-align: center;
+}
 .logo {
   img {
     height: 60px;
@@ -240,6 +243,7 @@ section.header-home-slider {
   background: $orange;
   border: 2px solid $orange;
   color: #fff;
+  cursor: pointer;
   padding: 10px 40px;
   font: {
     size: 24px;
@@ -348,6 +352,11 @@ footer {
     }
     &.ui-tabs-active {
       color: $blue;
+      .category-links {
+        li {
+          color: $black;
+        }
+      }
       .fas {
         transform: rotate(0deg);
       }
@@ -356,6 +365,17 @@ footer {
       .fas {
         color: $orange;
         transform: rotate(0deg);
+      }
+    }
+    .category-links {
+      font-size: 15px;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      li {
+        margin: 10px 0;
+        &:hover {
+          color: $blue;
+        }
       }
     }
   }
@@ -393,7 +413,13 @@ footer {
       border: 1px solid $light-grey;
       box-shadow: 0 0 8px 1px rgba(#000, 0);
       width: 100%;
-      text-align: center;
+      height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-height: 100%;
+      }
     }
     .text {
       @extend .duration;
@@ -412,4 +438,65 @@ footer {
     }
   }
 }
+.product {
+  .img {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.product-wrapper {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  .custom-select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 362px;
+  }
+  .btn {
+    margin-bottom: 30px;
+  }
+  .more {
+    color: $blue;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.aside__menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  .menu-item {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #dadada;
+    }
+    a {
+      display: block;
+      padding: 10px 0;
+      @extend .duration;
+      &:hover {
+        color: $blue;
+        &:after {
+          color: $orange;
+        }
+      }
+    }
+  }
+  .sub-menu {
+    padding-left: 20px;
+    font-size: 14px;
+    .menu-item {
+      border-bottom: none;
+    }
+  }
+}
+
 @import "responsive";

@@ -17,7 +17,7 @@
                 </ul>
             </aside>
             <div id="tabs-1" class="items-wrapper">
-                <a class="item" href="">
+                <a class="item" href="/single">
                     <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/img/oil.png" alt=""></div>
                     <div class="text flex justify-center align-center">FULLTECH 10W-60</div>
                 </a>
