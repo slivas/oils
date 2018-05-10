@@ -15,51 +15,51 @@ get_header(); ?>
             </div>
         <?php endwhile; ?>
     </section>
-<?php endif; ?>
+<?php endif;
+                $args = array(
+                    'taxonomy' => 'product_cat',
+                    'orderby'    => 'count',
+                    'order'      => 'DESC',
+                    'hide_empty' => false,
+                    'parent' => 0
+                );
 
+                $product_categories = get_terms( $args );?>
     <section class="our-products">
         <div class="container">
-            <div class="title underline">Категории продуктов</div>
+            <div class="title underline"><?php echo pll__('Product category'); ?></div>
             <ul class="flex justify-between products-list">
+                <?php foreach ( $product_categories as $product_category ) :
+                    //var_dump($product_category);
+                    $thumbnail_id = get_woocommerce_term_meta( $product_category->term_id, 'thumbnail_id', true );
+                    $image = wp_get_attachment_url( $thumbnail_id );?>
                 <li class="item">
-                    <a href="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/oil.png" alt="">
-                        <span class="title medium">Масла для легковых и лёгких коммерческих авто</span>
+                    <a href="<?php echo get_term_link( $product_category );?>">
+                        <img src="<?php echo $image;?>" alt="">
+                        <span class="title medium"><?php echo $product_category->name;?></span>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/oil.png" alt="">
-                        <span class="title medium">Масла для грузовых автомобилей</span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/oil.png" alt="">
-                        <span class="title medium">Масла для сельскохозяйственной и садовой техники</span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/oil.png" alt="">
-                        <span class="title medium">Индустриальные и прочие смазочные материалы</span>
-                    </a>
-                </li>
+<?php endforeach;
+wp_reset_query();?>
+
             </ul>
         </div>
     </section>
     <section class="selection">
         <div class="container flex justify-center">
-            <a href="<?php echo get_template_directory_uri(); ?>/selection" class="btn selection__btn">Подобрать масло<i class="fas fa-cog"></i></a>
+            <a href="/selection" class="btn selection__btn">Подобрать масло<i class="fas fa-cog"></i></a>
         </div>
     </section>
+<?php if (have_posts()):?>
     <section class="about">
         <div class="container">
+            <?php while (have_posts()):
+        the_post();?>
             <h1 class="title underline">Opet - лидер инноваций в сегменте смазочных материалов</h1>
-            <p>Одна из крупнейших компаний-дистрибьюторов топлива в Турции - OPET - делает шаги по дальнейшему развитию сегмента смазочных материалов, создав новую серию масел "Full Series".</p>
-            <p>Получив многочисленные награды за рубежом и внутри страны за свою канистру особого дизайна, Моторные Масла серии Full Series соответствуют всем требованиям автомобилей с высокими эксплуатационными характеристиками, выпускаемых современной автомобильной промышленностью по новейшим разработкам. В соответствии с этим моторные масла Full Series, выпускаемых под брендом OPET, одобренные производителями автомобилей, такими как Mercedes-Benz, МАН, ВОЛЬВО и Форд.</p>
-            <p>Действуя по принципу «постоянного развития и перемен», OPET создает продукты, отвечающие ожиданиям рынка для применения в любой сфере, где требуется использование смазочных материалов. Продемонстрировано сферы применения этих продуктов и каталог, где показано уровне эксплуатационных показателей этих продуктов при их использовании.</p>
+            <?php the_content();
+            endwhile;?>
         </div>
     </section>
 
-<?php get_footer(); ?>
+<?php endif;
+get_footer(); ?>

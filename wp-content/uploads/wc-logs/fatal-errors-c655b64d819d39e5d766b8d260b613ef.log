@@ -1,0 +1,24 @@
+2018-05-10T21:15:38+00:00 CRITICAL Uncaught Error: Call to undefined function pll__() in C:\OSPanel\domains\oils\wp-content\themes\oils\main.php:22
+Stack trace:
+#0 C:\OSPanel\domains\oils\wp-includes\template-loader.php(74): include()
+#1 C:\OSPanel\domains\oils\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\oils\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown
+
+2018-05-10T21:15:58+00:00 CRITICAL Uncaught Error: Call to undefined function pll_() in C:\OSPanel\domains\oils\wp-content\themes\oils\main.php:22
+Stack trace:
+#0 C:\OSPanel\domains\oils\wp-includes\template-loader.php(74): include()
+#1 C:\OSPanel\domains\oils\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\oils\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown
+
+2018-05-10T21:17:43+00:00 CRITICAL Uncaught Error: Call to undefined function pll__() in C:\OSPanel\domains\oils\wp-content\themes\oils\main.php:22
+Stack trace:
+#0 C:\OSPanel\domains\oils\wp-includes\template-loader.php(74): include()
+#1 C:\OSPanel\domains\oils\wp-blog-header.php(19): require_once('C:\\OSPanel\\doma...')
+#2 C:\OSPanel\domains\oils\index.php(17): require('C:\\OSPanel\\doma...')
+#3 {main}
+  thrown
+
