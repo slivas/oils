@@ -21,8 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div id="tabs-1" <?php wc_product_cat_class( 'items-wrapper', $category ); ?>>
-
 	<?php
 	/**
 	 * woocommerce_before_subcategory hook.
@@ -36,14 +34,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 *
 	 * @hooked woocommerce_subcategory_thumbnail - 10
 	 */
-	do_action( 'woocommerce_before_subcategory_title', $category );
+	//do_action( 'woocommerce_before_subcategory_title', $category );
 
 	/**
 	 * woocommerce_shop_loop_subcategory_title hook.
 	 *
 	 * @hooked woocommerce_template_loop_category_title - 10
 	 */
-	do_action( 'woocommerce_shop_loop_subcategory_title', $category );
+	//do_action( 'woocommerce_shop_loop_subcategory_title', $category );
 
 	/**
 	 * woocommerce_after_subcategory_title hook.
@@ -58,4 +56,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 	do_action( 'woocommerce_after_subcategory', $category ); ?>
 
 
-</div>

@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="647d9166-fcf4-40d4-991b-1f906654cb4a" name="Default" comment="commit">
-      <change beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/oils/template-pro_cat.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/wp-content/languages/admin-network-ru_RU.po" afterPath="$PROJECT_DIR$/wp-content/languages/admin-network-ru_RU.po" />
-      <change beforePath="$PROJECT_DIR$/wp-content/languages/admin-ru_RU.mo" afterPath="$PROJECT_DIR$/wp-content/languages/admin-ru_RU.mo" />
-      <change beforePath="$PROJECT_DIR$/wp-content/languages/admin-ru_RU.po" afterPath="$PROJECT_DIR$/wp-content/languages/admin-ru_RU.po" />
-      <change beforePath="$PROJECT_DIR$/wp-content/languages/continents-cities-ru_RU.po" afterPath="$PROJECT_DIR$/wp-content/languages/continents-cities-ru_RU.po" />
-      <change beforePath="$PROJECT_DIR$/wp-content/languages/ru_RU.po" afterPath="$PROJECT_DIR$/wp-content/languages/ru_RU.po" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/contacts.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/contacts.php" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/functions.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/header.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/main.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/main.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product_cat.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product_cat.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-single-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-single-product.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-end.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-end.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php" afterPath="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-c655b64d819d39e5d766b8d260b613ef.log" afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-c655b64d819d39e5d766b8d260b613ef.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,31 +21,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/archive.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-pro_cat.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/template-pro_cat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loop-start.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loop-start.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="381">
+              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/single-product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-item.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/single-item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="29" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-single-product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-single-product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1144">
+              <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -55,7 +64,7 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="-177">
               <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="89" />
               <folding>
                 <marker date="1525982608801" expanded="true" signature="1394:1412" ph="..." />
@@ -67,8 +76,8 @@
       <file leaf-file-name="loop-end.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-end.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="208">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#6#646#0#PHP" expanded="true" />
               </folding>
@@ -76,41 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="archive-product.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/archive-product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-product.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-product_cat.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product_cat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+            <state relative-caret-position="421">
+              <caret line="71" column="81" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="81" />
+              <folding>
+                <marker date="1526211524850" expanded="true" signature="605:685" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/contacts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -154,7 +145,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/oils/js/main.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/page.php" />
         <option value="$PROJECT_DIR$/../artbud/artbud/archive.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/oils/contacts.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/template-selection.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/subcategory.php" />
@@ -168,12 +158,14 @@
         <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/global/sidebar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/main.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/template-pro_cat.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/archive-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-end.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product_cat.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/archive-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-single-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/oils/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/oils/contacts.php" />
       </list>
     </option>
   </component>
@@ -208,7 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,7 +238,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +287,10 @@
       <workItem from="1525752708662" duration="7175000" />
       <workItem from="1525811563934" duration="7004000" />
       <workItem from="1525973982065" duration="998000" />
-      <workItem from="1525975308988" duration="10396000" />
+      <workItem from="1525975308988" duration="10923000" />
+      <workItem from="1526062996124" duration="1811000" />
+      <workItem from="1526122737700" duration="9943000" />
+      <workItem from="1526210369422" duration="1955000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1524611358486</created>
@@ -343,13 +338,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105702000" />
+    <option name="totallyTimeSpent" value="119938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19399707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19619326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -387,8 +382,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/screenshot.png" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/index.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/front-page.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/header.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/scss/styles.css">
@@ -435,13 +428,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../artbud/artbud/page.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../artbud/artbud/archive.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/img/oil.png">
       <provider selected="true" editor-type-id="images">
@@ -456,18 +442,10 @@
     <entry file="file://$PROJECT_DIR$/../artbud/artbud/main.php" />
     <entry file="file://$PROJECT_DIR$/../artbud/artbud/services.php" />
     <entry file="file://$PROJECT_DIR$/../artbud/artbud/include/categories.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/template-selection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,47 +466,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/subcategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="111" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/scss/responsive.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="317" column="21" lean-forward="false" selection-start-line="317" selection-start-column="21" selection-end-line="317" selection-end-column="21" />
-          <folding>
-            <element signature="e#27#66#0" expanded="false" />
-            <element signature="e#93#1581#0" expanded="false" />
-            <element signature="e#120#231#0" expanded="false" />
-            <element signature="e#241#290#0" expanded="false" />
-            <element signature="e#299#332#0" expanded="false" />
-            <element signature="e#341#1380#0" expanded="false" />
-            <element signature="e#362#417#0" expanded="false" />
-            <element signature="e#429#596#0" expanded="false" />
-            <element signature="e#1396#1420#0" expanded="false" />
-            <element signature="e#1436#1501#0" expanded="false" />
-            <element signature="e#1608#4595#0" expanded="false" />
-            <element signature="e#1620#1645#0" expanded="false" />
-            <element signature="e#1657#1681#0" expanded="false" />
-            <element signature="e#1694#2987#0" expanded="false" />
-            <element signature="e#3004#3033#0" expanded="false" />
-            <element signature="e#3042#3088#0" expanded="false" />
-            <element signature="e#3115#3142#0" expanded="false" />
-            <element signature="e#3183#3251#0" expanded="false" />
-            <element signature="e#3266#3577#0" expanded="false" />
-            <element signature="e#3594#3765#0" expanded="false" />
-            <element signature="e#3791#3880#0" expanded="false" />
-            <element signature="e#3895#4127#0" expanded="false" />
-            <element signature="e#4148#4216#0" expanded="false" />
-            <element signature="e#4234#4343#0" expanded="false" />
-            <element signature="e#4373#4509#0" expanded="false" />
-            <element signature="e#4529#4552#0" expanded="false" />
-            <element signature="e#4622#4913#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,50 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="504" column="12" lean-forward="false" selection-start-line="504" selection-start-column="12" selection-end-line="504" selection-end-column="12" />
-          <folding>
-            <element signature="e#143#350#0" expanded="false" />
-            <element signature="e#362#419#0" expanded="false" />
-            <element signature="e#428#454#0" expanded="false" />
-            <element signature="e#461#590#0" expanded="false" />
-            <element signature="e#636#686#0" expanded="false" />
-            <element signature="e#699#766#0" expanded="false" />
-            <element signature="e#803#845#0" expanded="false" />
-            <element signature="e#862#881#0" expanded="false" />
-            <element signature="e#896#1377#0" expanded="false" />
-            <element signature="e#1401#1670#0" expanded="false" />
-            <element signature="e#1683#1778#0" expanded="false" />
-            <element signature="e#1789#1913#0" expanded="false" />
-            <element signature="e#1928#2164#0" expanded="false" />
-            <element signature="e#2171#2277#0" expanded="false" />
-            <element signature="e#2285#2491#0" expanded="false" />
-            <element signature="e#2507#2733#0" expanded="false" />
-            <element signature="e#2761#3832#0" expanded="false" />
-            <element signature="e#3838#4111#0" expanded="false" />
-            <element signature="e#4128#4208#0" expanded="false" />
-            <element signature="e#4216#4289#0" expanded="false" />
-            <element signature="e#4290#4395#0" expanded="false" />
-            <element signature="e#4407#4640#0" expanded="false" />
-            <element signature="e#4648#4843#0" expanded="false" />
-            <element signature="e#4862#4888#0" expanded="false" />
-            <element signature="e#4897#4920#0" expanded="false" />
-            <element signature="e#4929#4949#0" expanded="false" />
-            <element signature="e#4961#5009#0" expanded="false" />
-            <element signature="e#5016#5059#0" expanded="false" />
-            <element signature="e#5073#6064#0" expanded="false" />
-            <element signature="e#6083#6109#0" expanded="false" />
-            <element signature="e#6120#6197#0" expanded="false" />
-            <element signature="e#6213#6982#0" expanded="false" />
-            <element signature="e#7203#7514#0" expanded="false" />
-            <element signature="e#7528#7982#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/single-item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,15 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/template-pro_cat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,13 +519,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
           <caret line="40" column="52" lean-forward="false" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/subcategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="20" column="111" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/archive-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1685">
+          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/template-pro_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1097">
+          <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-end.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#646#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/single-item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="-177">
           <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="89" />
           <folding>
             <marker date="1525982608801" expanded="true" signature="1394:1412" ph="..." />
@@ -649,60 +625,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-end.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="421">
+          <caret line="71" column="81" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="81" />
           <folding>
-            <element signature="e#6#646#0#PHP" expanded="true" />
+            <marker date="1526211524850" expanded="true" signature="605:685" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/archive.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/archive-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/content-product_cat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/oils/woocommerce/loop/loop-start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="26">
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding />
         </state>
       </provider>

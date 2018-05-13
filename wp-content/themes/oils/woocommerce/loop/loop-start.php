@@ -19,7 +19,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-?>
+//echo  get_sidebar('sidebar-1');
+if (!is_singular()):?>
+
 <span class="title underline"><?php echo pll__('Which product is right for you?');?></span>
 
 <div class="tabs container">
@@ -35,7 +37,8 @@ $product_categories = get_terms( $args );?>
     <aside class="tabs__aside">
         <span class="title medium"><?php echo pll__('Categories');?> <i class="fas fa-angle-right"></i></span>
         <ul>
-<?php foreach ( $product_categories as $product_category ) :?>
+<?php foreach ( $product_categories as $product_category ) :
+    //$term_link_cat = get_term_link($product_category->term_id, 'product_cat');?>
             <li><a href="#tabs-<?php echo $product_category->term_id;?>">
                     <span><?php echo $product_category->name;?></span>
                     <i class="fas fa-angle-right"></i></a>
@@ -43,5 +46,7 @@ $product_categories = get_terms( $args );?>
             <?php endforeach;?>
         </ul>
     </aside>
+    <?php endif;?>
+    <div id="tabs-1" class="items-wrapper ui-tabs-panel ui-corner-bottom ui-widget-content <?php wc_product_cat_class( 'items-wrapper', $category ); ?>" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
 
 <!--<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">-->

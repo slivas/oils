@@ -25,10 +25,10 @@ function widgets_init()
     register_sidebar(array(
         'name' => 'Sidebar',
         'id' => 'sidebar-1',
-        'before_widget' => '<div class="sidebar-menu">',
-        'after_widget' => '</div>',
-        'before_title' => '<p class="h4">',
-        'after_title' => '</p>',
+        'before_widget' => '<aside class="tabs__aside"><span class="title medium">Categories <i class="fas fa-angle-right"></i></span><ul>',
+        'after_widget' => '<ul></aside>',
+        'before_title' => '<li>',
+        'after_title' => '<i class="fas fa-angle-right"></i></a></li>',
     ));
 
 
@@ -66,6 +66,14 @@ if (function_exists('add_theme_support')) {
     add_theme_support('menus');
 }*/
 
+function my_acf_init()
+{
+
+    acf_update_setting('google_api_key', 'AIzaSyAyPDxPiOp8rBprU5B_hdobbip3ps5KuOM');
+}
+
+add_action('acf/init', 'my_acf_init');
+
 if( function_exists('acf_add_options_page') ) {
 
     acf_add_options_page();
@@ -77,3 +85,60 @@ add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_
 function woo_remove_category_products_count() {
     return;
 }
+
+add_action('woocommerce_before_subcategory', 'setTempleteCategory');
+function setTempleteCategory($category) {
+    //var_dump($category);
+    $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+    $image = wp_get_attachment_url( $thumbnail_id );
+    $term_link = get_term_link($category->term_id, 'product_cat');?>
+
+        <a class="item" href="<?php echo $term_link;?>">
+            <div class="img"><img src="<?php echo $image;?>" alt=""></div>
+            <div class="text flex justify-center align-center"><?php echo $category->name?></div>
+        </a>
+
+<?php }
+
+add_action('woocommerce_before_shop_loop_item', 'setTempleteProducts');
+function setTempleteProducts() {
+    //var_dump($category);
+    //$thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+   // $image = wp_get_attachment_url( $thumbnail_id );
+    //$term_link = get_term_link($category->term_id, 'product_cat');
+
+    $thumb_id = get_post_thumbnail_id();
+    $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+
+    ?>
+
+    <a class="item" href="<?php echo get_the_permalink();?>">
+        <div class="img"><img src="<?php echo $thumb_url[0];?>" alt=""></div>
+        <div class="text flex justify-center align-center"><?php echo get_the_title();?></div>
+    </a>
+
+<?php }
+/*
+add_action('woocommerce_single_product_summary', 'setTempleteSingleProducts');
+function setTempleteSingleProducts() {
+    $thumb_id_p = get_post_thumbnail_id();
+    $thumb_url_p = wp_get_attachment_image_src($thumb_id_p,'thumbnail-size', true);?>
+<span class="title underline"><?php echo get_the_title();?></span>
+                <div class="flex product-wrapper">
+                    <div class="img">
+                        <img src="<?php echo $thumb_url_p[0];?>" alt="">
+                    </div>
+                    <div class="flex column align-center">
+                        <select class="custom-select">
+                            <option value="">Выберите объём</option>
+                            <option value="1">1л</option>
+                            <option value="2">4л</option>
+                            <option value="3">10л</option>
+                            <option value="4">200л</option>
+                        </select>
+                        <div class="btn">Добавить в корзину <i class="fas fa-shopping-cart"></i></div>
+                        <p class="text-center">Для получения детальной информации, <br/><a href="" class="more">кликните по ссылке</a>.</p>
+                    </div>
+                </div>
+<?php }
+*/

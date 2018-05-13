@@ -22,3 +22,5 @@ Stack trace:
 #3 {main}
   thrown
 
+2018-05-13T14:17:30+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 4096 bytes)
+
