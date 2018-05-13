@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 ?>
 <div class="container">
-    <div class="flex">
+    <div class="flex column">
         <?php
 do_action( 'woocommerce_before_single_product' );
 

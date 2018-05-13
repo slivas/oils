@@ -23,6 +23,8 @@ $(document).ready(function(){
         $('.header-nav, .nav-icon').toggleClass('open');
     });
 
-    $( ".tabs" ).tabs();
+    $( ".page-template-template-selection .tabs" ).tabs();
+
+    // $('.woocommerce-message').fadeTo(7000,1).fadeOut(2000);
 
 });

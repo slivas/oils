@@ -17,15 +17,19 @@ body {
   &:not(.home) {
     @media (min-width: 768px) {
       .header-nav {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
       }
     }
   }
 }
-.container {
+.container,
+.woocommerce .woocommerce-breadcrumb {
   padding: 0 20px;
   margin: 0 auto;
   width: 1200px;
+}
+.woocommerce .woocommerce-breadcrumb {
+  margin-bottom: 20px;
 }
 section {
   margin-bottom: 40px;
@@ -39,6 +43,9 @@ section {
     &:hover {
       text-decoration: none;
     }
+  }
+  ul {
+    padding-left: 25px;
   }
 }
 .text-center {
@@ -140,7 +147,7 @@ section {
     text-align: center;
   }
 }
-.cart {
+.header__cart {
   font-size: 24px;
   color: $black;
   @extend .duration;
@@ -324,6 +331,7 @@ footer {
 }
 .tabs {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 30px;
 }
 .tabs__aside {
@@ -392,6 +400,9 @@ footer {
 .contacts {
   .item {
     width: 50%;
+    &.map {
+      height: 400px;
+    }
   }
   .contacts__list {
     line-height: 2;
@@ -507,5 +518,66 @@ footer {
   background: #ececec;
   padding: 20px;
 }
+.orderby,
+#pa_vyberite-obem {
+  border: 1px solid #dadada;
+  padding: 5px;
+  cursor: pointer;
+}
+.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering {
+  float: none;
+  width: 1200px;
+  margin: 0 auto 25px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.woocommerce div.product p.price {
+  margin-bottom: 10px;
+}
+.woocommerce-variation-price {
+  margin-bottom: 5px;
+}
+.woocommerce-variation-add-to-cart {
+  display: flex;
+}
+.woocommerce-variation-availability {
+  margin-bottom: 10px;
+}
+.woocommerce .quantity .qty {
+  margin: 0 10px 0 0;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  padding: 5px;
+  height: 100%;
+}
+.woocommerce table.shop_attributes th {
+  width: 170px;
+}
+.woocommerce button.button.alt {
+  @extend .duration;
+  background: $orange;
+  border: 2px solid $orange;
+  &.disabled {
+    background: rgba($blue, .8);
+    border-color: rgba($blue, .8);
+  }
+  &:hover {
+    background: rgba($orange, 0);
+    color: $orange;
+    &.disabled {
+      background: rgba($orange, 0);
+      color: $blue;
+    }
+  }
+}
+.woocommerce-message {
+  width: 1160px;
+  margin: 0 auto 20px;
+}
+.button.wc-forward {
+  margin-left: 20px;
+}
+
 
 @import "responsive";

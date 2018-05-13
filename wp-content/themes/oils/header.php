@@ -38,7 +38,7 @@
                     $count = WC()->cart->get_cart_contents_count(); ?>
 
                     <div class="cart-wrapper">
-                        <a class="cart" href="/cart/">
+                        <a class="header__cart" href="/cart/">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
                         <span class="cart__sum"><?php echo $count;?></span>

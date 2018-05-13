@@ -1,5 +1,8 @@
 @media (max-width: 1199px) {
-  .container {
+  .container,
+  .woocommerce .woocommerce-breadcrumb,
+  .woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering,
+  .woocommerce-message {
     width: 100%;
   }
 }
@@ -19,8 +22,6 @@
   }
   .tabs {
     flex-direction: column;
-  }
-  .tabs {
     .ui-tabs-panel {
       .title {
         font-size: 26px;
@@ -47,11 +48,12 @@
       padding: 0 0 10px;
       .ui-tabs-tab {
         font-weight: 600;
-        margin: 0 20px 0 0;
+        margin: 0;
         text-align: center;
-        width: 22%;
+        justify-content: center;
         &:not(:last-of-type) {
           border-bottom: none;
+          margin-right: 20px;
         }
         .fas {
           transform: rotate(0deg);
@@ -77,6 +79,8 @@
   }
   .ui-tabs-nav {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
   footer .logo {
     margin-right: 40px;
@@ -257,6 +261,17 @@
   .single__menu {
     display: none;
   }
+  .contacts {
+    flex-direction: column;
+    .item {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .contacts__header {
+    text-align: center;
+  }
 }
 @media (max-width: 639px) {
   .logo img {
@@ -278,6 +293,17 @@
       }
     }
   }
+  .woocommerce-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .button.wc-forward {
+      order: 1;
+      width: 210px;
+      margin-top: 10px;
+    }
+  }
 }
 @media (max-width: 479px) {
   .title, .btn {
@@ -294,6 +320,22 @@
   }
   .product-wrapper .custom-select {
     width: 296px;
+  }
+  .woocommerce div.product form.cart .variations td {
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+  }
+  a.reset_variations {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+  }
+  #pa_vyberite-obem {
+    margin: 0;
+  }
+  .woocommerce div.product form.cart .variations {
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 400px) {
